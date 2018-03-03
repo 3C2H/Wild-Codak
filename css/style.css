@@ -189,3 +189,46 @@ nav {
 .comment{
  text-decoration : underline;
 }
+
+/*GALLERY*/
+
+#title-gallery {
+    margin-bottom: 110px;
+}
+
+.picture {
+    margin: 15px auto;
+}
+
+#gallery {
+    margin-bottom: 110px;
+}
+
+.img-bkg {   
+    vertical-align: top;
+}
+
+.img-bkg:hover {
+    opacity: 0.5;
+    transition: 0.3s ease;
+}
+
+figure {
+    background-color: #000;
+    position: relative;
+}
+
+.fa-plus {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 4rem;
+    opacity: 0;
+}
+
+figure:hover .fa-plus {
+    opacity: 1;
+    transition: 0.3s ease;
+}
