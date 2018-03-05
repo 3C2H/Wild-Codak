@@ -8,7 +8,6 @@ font-family: 'lato-bold';
 */
 
 @import url('../fonts/stylesheet.css');
-
 /*COMMON*/
 
 html {
@@ -73,7 +72,7 @@ h1::after {
     background-color: #c0a064;
 }
 
-.container{
+.container {
     align-items: center;
 }
 
@@ -121,7 +120,6 @@ nav {
     font-size: 2rem;
 }
 
-
 /*HOME*/
 
 #home {
@@ -160,23 +158,23 @@ nav {
 
 /*STORIES*/
 
-.actu{
+.actu {
     text-align: center;
 }
 
-.pics{
-    padding-top : 60px;
-    max-width : 580px;
-    width : 100%;
-    height : 380px;
+.pics {
+    padding-top: 60px;
+    max-width: 580px;
+    width: 100%;
+    height: 380px;
     object-fit: cover;
 }
 
-.actutitle{
+.actutitle {
     margin-bottom: 10px;
 }
 
-.actutitle::after{
+.actutitle::after {
     display: block;
     margin: 0 auto;
     content: "";
@@ -186,8 +184,8 @@ nav {
     background-color: #c0a064;
 }
 
-.comment{
- text-decoration : underline;
+.comment {
+    text-decoration: underline;
 }
 
 /*GALLERY*/
@@ -204,7 +202,7 @@ nav {
     margin-bottom: 110px;
 }
 
-.img-bkg {   
+.img-bkg {
     vertical-align: top;
 }
 
