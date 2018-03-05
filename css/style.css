@@ -1,8 +1,9 @@
-## FONTS ##
+/** FONTS **/
 @import url(../fonts/stylesheet.css);
 
-## CSS ##
+/** CSS **/
 @import url(common.css);
+@import url(home.css);
 @import url(galery.css);
 @import url(stories.css);
 @import url(contact.css);
