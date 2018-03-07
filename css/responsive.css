@@ -1,3 +1,13 @@
+@media screen and (max-width:992px){
+    .navbar-collapse{
+        background: rgba(0,0,0,0.5);
+        font-size: 1.6rem;
+        padding: 10px 0px 10px 10px;
+    }
+    header{
+        height : 50px;
+    }
+}
 @media screen and (max-width:720px){
     #home h1{
         font-size : 5rem;
@@ -7,10 +17,5 @@
     }
     .main-menu li{
         margin-right :0;
-    }
-    .navbar-collapse{
-        background: rgba(0,0,0,0.5);
-        font-size: 1.6rem;
-        padding: 10px 0px 10px 10px;
     }
 }

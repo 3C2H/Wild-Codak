@@ -1,9 +1,22 @@
 /*STORIES*/
-
+#stories{
+    width: 100%;
+    background-image: url("../images/bg-home.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 50px;
+}
+#stories .infos,
+#stories .infos a{
+    color : #9f9f9f;
+}
 .actu {
     text-align: center;
 }
-
+.actu .text{
+    margin-top : 10px;
+    color: #5f5f5f;
+}
 .pics {
     padding-top: 60px;
     max-width: 580px;
@@ -12,15 +25,18 @@
     object-fit: cover;
 }
 
-.actu-title {
-    margin-bottom: 10px;
+h2.actu-title {
+    font-family: "playfair-bold";
+    font-size : 1.8rem;
+    margin : 15px 0;
+    text-transform: uppercase;
 }
 
 .actu-title::after {
     display: block;
     margin: 0 auto;
     content: "";
-    width: 110px;
+    width: 60px;
     height: 2px;
     margin-top: 5px;
     background-color: #c0a064;
