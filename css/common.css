@@ -30,19 +30,16 @@ a:hover {
     color: inherit;
 }
 
-ul li {
-    display: inline-block;
-}
-
 .button {
     font-family: 'lato-bold';
     color: #fff;
     text-transform: uppercase;
     border: 1px solid #c0a064;
-    padding: 10px 20px;
+    padding: 15px 30px;
     max-width: 224px;
     margin: 0 auto;
     transition: background-color 0.2s ease;
+    font-size :1.7rem;
 }
 
 .button:hover {
