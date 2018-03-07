@@ -1,4 +1,7 @@
 @media screen and (max-width:992px){
+    .navbar-wrapper{
+        padding-top : 10px;
+    }
     .navbar-collapse{
         background: rgba(0,0,0,0.5);
         font-size: 1.6rem;
