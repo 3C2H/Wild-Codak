@@ -7,7 +7,7 @@
     background-attachment: fixed;
     padding-bottom: 110px;
 }
-.container{
+#gallery .container{
     background-color : #fff;
     padding : 50px;
 }
