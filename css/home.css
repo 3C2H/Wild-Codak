@@ -1,9 +1,18 @@
 /*HOME*/
 
+header{
+    position: relative;
+    z-index: 3;
+}
+
+main{
+    position: relative;
+    z-index : 2;
+}
+
 #home {
     width: 100%;
     height: 100%;
-    background-image: url("../images/bg-home.jpg");
     background-size: cover;
     background-position: top;
 }
@@ -30,4 +39,18 @@
     color: #f2e8d5;
     margin: 0 auto;
     height: calc(100% - 80px);
+}
+
+.homeimage{
+    width : 100vw;
+    height : 100vh;
+}
+
+.pos{
+    position: absolute;
+    left : 0px;
+    top : 0px;
+    z-index : 1;
+    width: 100vw;
+    height: 100vh;
 }
