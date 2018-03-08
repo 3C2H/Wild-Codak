@@ -6,6 +6,12 @@
     background-attachment: fixed;
     padding-bottom: 50px;
 }
+
+#stories .container{
+    background-color : #fff;
+    padding : 50px;
+}
+
 #stories .infos,
 #stories .infos a{
     color : #9f9f9f;

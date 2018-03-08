@@ -13,8 +13,7 @@ header{
 #home {
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: top;
+    background: #000;
 }
 
 #home header {
@@ -44,8 +43,9 @@ header{
 
 
 .homeimage{
-    width: 100vw;
-    height: 100vh;
+    height : 100%;
+    object-fit : cover;
+    opacity : 0.8;
 }
 
 .pos{
@@ -53,6 +53,11 @@ header{
     left : 0px;
     top : 0px;
     z-index : 1;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+.carousel-inner,
+.carousel-item{
+    width: 100%;
+    height: 100%;
 }
