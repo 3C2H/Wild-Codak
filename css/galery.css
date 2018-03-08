@@ -22,6 +22,9 @@
     margin: 15px auto;
 }
 
+#lightbox {
+    width: 600px;
+}
 
 .img-bkg {
     width: 100%;
