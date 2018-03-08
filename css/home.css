@@ -25,24 +25,25 @@ header{
     text-transform: uppercase;
     font-size: 6rem;
     margin-bottom: 25px;
+    color: #f2e8d5;
 }
 
 #home .subtitle {
     margin-bottom: 50px;
     font-size: 2.4rem;
+    color : #f2e8d5;
 }
 
 #home .content {
     padding: 15vh 30px;
     text-align: center;
     max-width: 870px;
-    color: #f2e8d5;
     margin: 0 auto;
     height: calc(100% - 80px);
 }
 
 
-.homeimage{
+.home-image{
     height : 100%;
     object-fit : cover;
     opacity : 0.8;
