@@ -23,14 +23,14 @@ header{
 #home h1 {
     font-family: "playfair-bold";
     text-transform: uppercase;
-    font-size: 6rem;
+    font-size: 7rem;
     margin-bottom: 25px;
     color: #f2e8d5;
 }
 
 #home .subtitle {
     margin-bottom: 50px;
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     color : #f2e8d5;
 }
 
@@ -42,7 +42,9 @@ header{
     height: calc(100% - 80px);
 }
 
-
+#home .content button{
+    font-size : 2rem;
+}
 .home-image{
     height : 100%;
     object-fit : cover;
