@@ -12,65 +12,63 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <div id="contact">
-        <header>
-            <div class="navbar-wrapper">
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav main-menu">
-                            <li><a class="nav-link" href="index.html">Home</a></li>
-                            <li><a class="nav-link" href="galery.html">Galery</a></li>
-                            <li><a class="nav-link" href="stories.html">Stories</a></li>
-                            <li class="active"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul> 
-                    </div>
-                </nav>
-				<ul class="social-media navbar">
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fab fa-behance"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                </ul>
+<body id="contact">
+    <header>
+        <div class="navbar-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav main-menu">
+                        <li id="menu-home"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li id="menu-gallery"><a class="nav-link" href="galery.html">Galerie</a></li>
+                        <li id="menu-stories"><a class="nav-link" href="stories.html">Stories</a></li>
+                        <li id="menu-contact"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul> 
+                </div>
+            </nav>
+            <ul class="social-media navbar">
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-behance"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="container">
+        <h1>Contact</h1>
+        <p class="text-contact">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus dolor ipsum, non tincidunt urna lacinia eget. Vivamus
+        eu erat sed leo efficitur aliquet.
+        </p>
+        <div class="form-group row">
+            <div class="col-sm-6 col-12">
+                <label for="name">Nom prénom</label>
+                <input class="form-control" type="text">
             </div>
-        </header>
-        <main class="container">
-            <h1>Contact</h1>
-            <p class="text-contact">
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam maximus dolor ipsum, non tincidunt urna lacinia eget. Vivamus
-            eu erat sed leo efficitur aliquet.
-            </p>
-            <div class="form-group row">
-                <div class="col-sm-6 col-12">
-                    <label for="name">Nom prénom</label>
-                    <input class="form-control" type="text">
-                </div>
-                <div class="col-sm-6 col-12">
-                    <label for="name">Email</label>
-                    <input class="form-control" type="email">
-                </div>
-                <div class="col-12 message">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" rows="8"></textarea>
-                </div>
+            <div class="col-sm-6 col-12">
+                <label for="name">Email</label>
+                <input class="form-control" type="email">
             </div>
-        </main>
+            <div class="col-12 message">
+                <label for="message">Message</label>
+                <textarea class="form-control" rows="8"></textarea>
+            </div>
+        </div>
+    </main>
 
-        <!--scripts jquery et bootstrap-->
-        <script type="js/jquery-3.3.1.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-        <!--script perso-->
-        <script type="script.js"></script>
-    </div>
+    <!--scripts jquery et bootstrap-->
+    <script type="js/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!--script perso-->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
