@@ -12,9 +12,6 @@
     }
 }
 @media screen and (max-width:720px){
-    #title-gallery{
-        margin-bottom: 50px;
-    }
     .navbar-wrapper{
         width : 100%;
     }

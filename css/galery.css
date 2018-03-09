@@ -5,13 +5,14 @@
     background-image: url("../images/bg-home.jpg");
     background-size: cover;
     background-attachment: fixed;
+    padding-bottom: 50px;
 }
 #gallery .container{
     background-color : #fff;
     padding : 50px;
 }
 #title-gallery {
-    margin-bottom: 110px;
+    margin-bottom: 50px;
 }
 
 .main {
