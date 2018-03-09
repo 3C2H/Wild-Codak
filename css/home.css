@@ -35,8 +35,7 @@ header{
 }
 
 #home .content {
-    padding: 15px 30px;
-    top: calc(50% - 235px);
+    padding: 250px 30px;
     text-align: center;
     max-width: 870px;
     margin: 0 auto;
