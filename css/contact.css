@@ -10,7 +10,8 @@
     max-width: 980px;
     background-color : rgba(255,255,255,0.8);
     padding : 50px;
-    margin-top : 15vh;
+    position: relative;
+    top: calc(50% - 181px);
 }
 #contact h1{
     margin-bottom :55px;
