@@ -16,6 +16,11 @@
 #stories .infos a{
     color : #9f9f9f;
 }
+
+#title-stories {
+    margin-top: 80px;
+}
+
 .actu {
     text-align: center;
 }
