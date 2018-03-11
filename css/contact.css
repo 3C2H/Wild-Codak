@@ -11,7 +11,7 @@
     background-color : rgba(255,255,255,0.8);
     padding : 50px;
     position: relative;
-    top: calc(50% - 181px);
+    top: calc(45% - 181px);
 }
 #contact h1{
     margin-bottom :55px;
@@ -26,6 +26,21 @@
     margin : 30px auto 0 auto;
 }
 
+.form-control {
+    margin-bottom: 5%;
+}
+
 .message{
     margin-top : 20px;
+}
+
+.button-form {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #000;
+    padding: 10px 20px;
+}
+
+.button-form:hover {
+    color: #fff;
 }
