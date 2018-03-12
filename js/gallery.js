@@ -13,6 +13,7 @@ window.addEventListener('load', function () {
     let i = 1
     let step = 150
 
+
     loadItems(i, itemsToLoad)
 
     window.addEventListener('scroll', () => {
@@ -48,7 +49,6 @@ window.addEventListener('load', function () {
             row.appendChild(div)
         }
     }
-
     //const list  = {1,2,3,4}
     //list.forEach((element, index => {
     //consol.log(index, - '-', element)
