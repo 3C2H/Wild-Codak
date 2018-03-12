@@ -1,31 +1,30 @@
 window.addEventListener('load', function () {
 
     //Gestion lightbox
-    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+    $(document).on('click', '[data-toggle="lightbox"]', (event) => {
         event.preventDefault()
         $(this).ekkoLightbox()
     });
 
-
-    let windowHeight = window.innerHeight
+    //Gestion de la galerie
     const row = document.querySelector(`#images-wrapper`)
     const maxItems = 42
     let itemsToLoad = 12
-    let i = 1;
+    let i = 1
     let step = 150
-    
+
     loadItems(i, itemsToLoad)
 
-    window.addEventListener('scroll', function(){
-        changeValue(i)
+    window.addEventListener('scroll', () => {
+        changeValue()
     })
 
-    function changeValue(i){
+    const changeValue = () => {
         if (itemsToLoad < maxItems)  {
             if (window.scrollY > step) {
-                step = step + 150
-                i = itemsToLoad + 1
-                itemsToLoad = itemsToLoad + 3
+                step = step + 300
+                let i = itemsToLoad + 1
+                itemsToLoad = itemsToLoad + 6
                 loadItems(i, itemsToLoad)
             }
         }
@@ -34,7 +33,6 @@ window.addEventListener('load', function () {
         }
     }
 
-    //Gestion de la galerie
     function loadItems(i, itemsToLoad) {
         for (i; i <= itemsToLoad; i++) {
             let div = document.createElement(`div`)
@@ -49,6 +47,10 @@ window.addEventListener('load', function () {
             `
             row.appendChild(div)
         }
-        return i
     }
+
+    //const list  = {1,2,3,4}
+    //list.forEach((element, index => {
+    //consol.log(index, - '-', element)
+    //}))
 })
