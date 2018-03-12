@@ -1,3 +1,8 @@
+@media (min-width: 1200px){
+    .container {
+        max-width: 1500px;
+    }
+}
 @media screen and (max-width:992px){
     .navbar-wrapper{
         padding-top : 10px;
