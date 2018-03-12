@@ -1,7 +1,7 @@
 window.addEventListener('load', function () {
 
     //Gestion lightbox
-    $(document).on('click', '[data-toggle="lightbox"]', (event) => {
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
         event.preventDefault()
         $(this).ekkoLightbox()
     });
@@ -10,11 +10,10 @@ window.addEventListener('load', function () {
     const row = document.querySelector(`#images-wrapper`)
     const maxItems = 42
     let itemsToLoad = 12
-    let i = 1
     let step = 150
 
 
-    loadItems(i, itemsToLoad)
+    loadItems(1, itemsToLoad)
 
     window.addEventListener('scroll', () => {
         changeValue()
