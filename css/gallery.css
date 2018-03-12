@@ -35,15 +35,17 @@
     height: 250px;
 }
 
-.img-bkg:hover {
-    opacity: 0.5;
-    transition: 0.3s ease;
-}
-
 figure {
     background-color: #000;
     position: relative;
 }
+
+figure i:hover img,
+figure a:hover img{
+    opacity: 0.5;
+    transition: 0.3s ease;
+}
+
 
 .fa-plus {
     position: absolute;
