@@ -12,9 +12,8 @@ window.addEventListener('load', function () {
     const maxItems = 42
     let itemsToLoad = 12
     let i = 1;
-    let step = 210
-    //on calcule le nombre d'item en fonction de la hauteur de l'écran (chaque item fait 210px de hauteur) 
-    // var nbItem = Math.round(windowHeight / 210);
+    let step = 150
+    
     loadItems(i, itemsToLoad)
 
     window.addEventListener('scroll', function(){
@@ -24,11 +23,9 @@ window.addEventListener('load', function () {
     function changeValue(i){
         if (itemsToLoad < maxItems)  {
             if (window.scrollY > step) {
-                i = i + 3
-                step = step + step
+                step = step + 150
+                i = itemsToLoad + 1
                 itemsToLoad = itemsToLoad + 3
-                console.log('load')
-                console.log(i)
                 loadItems(i, itemsToLoad)
             }
         }
@@ -52,5 +49,6 @@ window.addEventListener('load', function () {
             `
             row.appendChild(div)
         }
+        return i
     }
 })
