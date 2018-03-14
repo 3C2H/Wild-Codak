@@ -31,6 +31,7 @@ a:hover {
 }
 
 .button {
+    position : relative;
     font-family: 'lato-bold';
     color: #fff;
     text-transform: uppercase;
@@ -41,11 +42,28 @@ a:hover {
     transition: background-color 0.2s ease;
     font-size: 1.7rem;
 }
+.button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #c0a064;
+    z-index : -1; 
+    color : #fff;
+    content: "";
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transform: scaleX(0);
+    transition : transform 0.2s ease;
 
-.button:hover {
-    background-color: #c0a064;
-    transition: background-color 0.2s ease;
 }
+ .button:hover::before {
+    transform: scaleX(1);
+    transition : transform 0.2s ease;
+} 
 
 main {
     padding-top: 100px;
@@ -132,4 +150,19 @@ header a:hover,
 
 .social-media li a {
     font-size: 2.4rem;
+}
+
+/*IMAGES WRAPPER*/
+.image-wrapper{
+	position : relative;
+	background-color: #000;
+    overflow: hidden;
+    max-height : 380px;
+}
+
+
+.image-wrapper:hover img{
+	opacity : 0.8;
+    transform: scale(1.1);
+	transition: all 0.6s ease;
 }

@@ -12,6 +12,8 @@
     padding : 50px;
     position: relative;
     top: calc(45% - 181px);
+    /* Pour l'animation du bouton */
+    z-index : -2; 
 }
 #contact h1{
     margin-bottom :55px;

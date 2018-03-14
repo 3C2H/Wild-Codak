@@ -13,7 +13,7 @@ window.addEventListener('load', function () {
     let step = 150
 
 
-    loadItems(1, itemsToLoad)
+    loadItems(13, itemsToLoad)
 
     window.addEventListener('scroll', () => {
         changeValue()
@@ -38,7 +38,7 @@ window.addEventListener('load', function () {
             let div = document.createElement(`div`)
             div.className = `col-lg-4 col-sm-6 col-12 picture`
             div.innerHTML = `
-                <figure>
+                <figure class="image-wrapper">
                     <a href="images/${i}.jpg?image=${i}" data-toggle="lightbox" data-gallery="example-gallery" data-max-width="1400" data-max-height="840">
                         <img src="images/${i}.jpg" class="img-fluid  img-bkg" alt="gallery-image${i}">
                         <i class="fas fa-plus"></i>
@@ -48,8 +48,4 @@ window.addEventListener('load', function () {
             row.appendChild(div)
         }
     }
-    //const list  = {1,2,3,4}
-    //list.forEach((element, index => {
-    //consol.log(index, - '-', element)
-    //}))
 })
