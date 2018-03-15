@@ -10,16 +10,9 @@ window.addEventListener('load', function () {
     const row = document.querySelector(`#images-wrapper`)
     const maxItems = 42
     let itemsToLoad = 12
-    let step = 150
+    let step = 200
 
-
-    loadItems(13, itemsToLoad)
-
-    window.addEventListener('scroll', () => {
-        changeValue()
-    })
-
-    const changeValue = () => {
+    const scrollListener = window.addEventListener('scroll', () => {
         if (itemsToLoad < maxItems)  {
             if (window.scrollY > step) {
                 step = step + 300
@@ -28,12 +21,9 @@ window.addEventListener('load', function () {
                 loadItems(i, itemsToLoad)
             }
         }
-        else{
-            window.removeEventListener("scroll", changeValue)
-        }
-    }
-
-    function loadItems(i, itemsToLoad) {
+    })
+    
+    const loadItems = (i, itemsToLoad) => {
         for (i; i <= itemsToLoad; i++) {
             let div = document.createElement(`div`)
             div.className = `col-lg-4 col-sm-6 col-12 picture`
@@ -48,4 +38,6 @@ window.addEventListener('load', function () {
             row.appendChild(div)
         }
     }
+
+
 })

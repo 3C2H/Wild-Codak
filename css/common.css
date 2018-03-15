@@ -41,6 +41,7 @@ a:hover {
     margin: 0 auto;
     transition: background-color 0.2s ease;
     font-size: 1.7rem;
+    z-index : 0
 }
 .button::before{
     content: "";
@@ -125,7 +126,6 @@ header a:hover,
 .navbar-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: end;
     padding: 15px 0px;
     height: 100%;
     width: 80%;
