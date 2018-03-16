@@ -46,16 +46,6 @@ figure a:hover img{
 }
 
 
-.fa-plus {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 4rem;
-    opacity: 0;
-}
-
 #gallery .image-wrapper:hover a::after{
     top: 30px;
     right: 30px;

@@ -16,22 +16,21 @@ window.addEventListener('load', function () {
         if (itemsToLoad < maxItems)  {
             if (window.scrollY > step) {
                 step = step + 200
-                let i = itemsToLoad + 1
+                let counter = itemsToLoad + 1
                 itemsToLoad = itemsToLoad + 6
-                loadItems(i, itemsToLoad)
+                loadItems(counter, itemsToLoad)
             }
         }
     })
     
-    const loadItems = (i, itemsToLoad) => {
-        for (i; i <= itemsToLoad; i++) {
+    const loadItems = (counter, itemsToLoad) => {
+        for (let i = counter; i <= itemsToLoad; i++) {
             let div = document.createElement(`div`)
             div.className = `col-lg-4 col-sm-6 col-12 picture`
             div.innerHTML = `
                 <figure class="image-wrapper">
                     <a href="images/${i}.jpg?image=${i}" data-toggle="lightbox" data-gallery="example-gallery" data-max-width="1400" data-max-height="840">
-                        <img src="images/${i}.jpg" class="img-fluid  img-bkg" alt="gallery-image${i}">
-                        <i class="fas fa-plus"></i>
+                        <img src="images/${i}.jpg" class="img-fluid img-bkg" alt="gallery-image${i}">
                     </a>
                 </figure>
             `
