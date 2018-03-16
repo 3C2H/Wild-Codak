@@ -15,7 +15,7 @@ window.addEventListener('load', function () {
     const scrollListener = window.addEventListener('scroll', () => {
         if (itemsToLoad < maxItems)  {
             if (window.scrollY > step) {
-                step = step + 300
+                step = step + 200
                 let i = itemsToLoad + 1
                 itemsToLoad = itemsToLoad + 6
                 loadItems(i, itemsToLoad)
