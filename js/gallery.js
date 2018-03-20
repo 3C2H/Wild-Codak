@@ -10,12 +10,12 @@ window.addEventListener('load', function () {
     const row = document.querySelector(`#images-wrapper`)
     const maxItems = 42
     let itemsToLoad = 12
-    let step = 200
+    let step = 150
 
     const scrollListener = window.addEventListener('scroll', () => {
         if (itemsToLoad < maxItems)  {
             if (window.scrollY > step) {
-                step = step + 200
+                step = step + 150
                 let counter = itemsToLoad + 1
                 itemsToLoad = itemsToLoad + 6
                 loadItems(counter, itemsToLoad)
